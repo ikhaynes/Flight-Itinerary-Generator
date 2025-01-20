@@ -11,10 +11,6 @@ Enter for search for flights & enter name
 
 ## Run Simulator
 
-In order to compile the code for the final project (part 4) type the following command:
-
-g++ ECConsoleUITextLabel.cpp ECTextViewImp.cpp ECConsoleUIView.cpp ECConsoleUIListBox.cpp ECConsoleUITextField.cpp ECConsoleUIButton.cpp ECConsoleFlightButton.cpp ECAirlineFinancial.cpp ECAirlineOperation.cpp ECAirlineSimulator.cpp ECAirlineTicketing.cpp ECAirport.cpp ECFlight.cpp ECFlightItinerary.cpp CompleteTest.cpp -std=c++11 -o final
-
 The above command will build an executable that can be run by using the following line: ./airlineSim dataTestFile
 
 An easier way of compiling the code can be accomplished by typing `make` or `make airlineSim` in the command line. With the included Makefile, this will automatically compile the programm with the first command.
