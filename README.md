@@ -1,8 +1,12 @@
 # Airline-Reservation-System-CSE3150
 
+## Basic Instructions
 CTRL+Q quit
+
 CTRL+A cycle to next option
+
 use arrows for origin + Destination + Flights
+
 Enter for search for flights & enter name
 
 ## Run Simulator
@@ -14,6 +18,10 @@ g++ ECConsoleUITextLabel.cpp ECTextViewImp.cpp ECConsoleUIView.cpp ECConsoleUILi
 The above command will build an executable that can be run by using the following line: ./final `name of test file`
 
 An easier way of compiling the code can be accomplished by typing `make` or `make final` in the command line. With the included Makefile, this will automatically compile the programm with the first command.
+
+
+## Photos
+
 
 ## Known issues/bugs
 
