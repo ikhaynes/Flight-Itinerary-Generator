@@ -1,5 +1,8 @@
 # Airline-Reservation-System-CSE3150
 
+## Description
+
+skeleton code provided by a professor at UConn in Spring 2024
 ## Basic Instructions
 CTRL+Q quit
 
