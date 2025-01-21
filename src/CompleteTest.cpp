@@ -57,10 +57,11 @@ void readTestFile(ECAirlineSimulator *&sim, const string &filename, vector<strin
                 updateAirlineSimulator(sim, line, listAirports);
             }
         }
-        testFile.close();
+        // testFile.close();
     } else {
         cerr << "Unable to open file!!\n";
     }
+    testFile.close();
 }
 
 // populates the UI with data from the file
@@ -111,7 +112,7 @@ void populateUI(ECConsoleUIView &viewTest, ECAirlineSimulator *&sim, vector<stri
 
     ECConsoleUIView *tempView = &viewTest;
     // button to search for flights
-    ECConsoleUIButton *pb1 = new ECConsoleFlightButton(25, 10, 50, 10, "Search for Flights", px1, px2, sim, /*tempView,*/ px3);
+    ECConsoleUIButton *pb1 = new ECConsoleFlightButton(25, 10, 50, 10, "Search for Flights", px1, px2, sim, px3);
     viewTest.AddUIItem(pb1);
     viewTest.AddUIItem(px3); 
 
@@ -130,7 +131,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        cout << "Use: ./final <dataTestFile>\n";
+        cout << "Use: ./airlineSim <dataTestFile>\n";
         return -1;
     }
     ECAirlineSimulator sim;
