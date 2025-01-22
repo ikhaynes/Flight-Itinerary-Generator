@@ -1,5 +1,5 @@
 # Airline-Reservation-System-C++Essentials
-### Starter code provided by UConn professor Spring 2024
+### Starter code provided by a UConn professor Spring 2024
 
 ## Description
 
@@ -31,15 +31,10 @@ The included `/src/dataTestFile` has data for the various airports and flights. 
 
 ## Photos
 ![Origin Flights](images/origin_flights_img.png)
-
 ![Destination Flights](images/destination_flights_img.png)
-
 ![Search Flights Button](images/search_flights_button_img.png)
-
 ![Possible Flights](images/possible_flights_img.png)
-
 ![No Flights Message](images/no_flights_img.png)
-
 ![Name Input](images/name_img.png)
 
 ## Known issues/bugs
