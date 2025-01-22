@@ -12,13 +12,13 @@ Airport and flight info is included in `src/dataTestFile`. This file can be upda
 ### Basic Instructions
 Since this program is run in a terminal, there are some 'unusual' ways of navigating through it. Basic instructions are provided below:
 
-1. CTRL+Q to quit
+1. `CTRL+Q` to quit
 
-2. CTRL+A to cycle to next available section
+2. `CTRL+A` to cycle to next available section
 
 3. `Enter` to press a button or type a name
 
-4. Arrow keys to cycle through lists
+4. `Arrow keys` to cycle through lists
 
 
 ## Run Simulator
