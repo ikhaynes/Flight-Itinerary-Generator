@@ -1,4 +1,4 @@
-# Flight-Itinerary-Generator-C++Essentials
+# Flight-Itinerary-Generator
 ### Starter code provided by a UConn professor Spring 2024
 
 ## Description
