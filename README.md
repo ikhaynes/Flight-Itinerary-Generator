@@ -1,4 +1,4 @@
-# Flight-Itinerary-Generator
+# Flight Itinerary Generator
 ### Starter code provided by a UConn professor Spring 2024
 
 ## Description
