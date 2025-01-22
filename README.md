@@ -1,4 +1,4 @@
-# Airline-Reservation-System-C++Essentials
+# Flight-Itinerary-Generator-C++Essentials
 ### Starter code provided by a UConn professor Spring 2024
 
 ## Description
