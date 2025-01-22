@@ -107,11 +107,15 @@ void populateUI(ECConsoleUIView &viewTest, ECAirlineSimulator *&sim, vector<stri
     viewTest.AddUIItem(px2);    
   
     // itineraries
+    // ERROR!! garbage values show up in this listbox
+    // list box is getting data from line 148 (wndTest.AddStatusRow. . .)
     ECConsoleUIListBox *px3 = new ECConsoleUIListBox(5, 14, viewTest.GetColNumInView()-1, 16 );
-    px3->AddChoice("");
+    // list box requires non-empty choices, but garbage values show up when empty line is added
+    px3->AddChoice("Choose an Origin and Destination flight");
+    px3->Choose(0);
 
-    ECConsoleUIView *tempView = &viewTest;
     // button to search for flights
+    // ERROR!! garbage values may have something to do with how this button works. . .
     ECConsoleUIButton *pb1 = new ECConsoleFlightButton(25, 10, 50, 10, "Search for Flights", px1, px2, sim, px3);
     viewTest.AddUIItem(pb1);
     viewTest.AddUIItem(px3); 
