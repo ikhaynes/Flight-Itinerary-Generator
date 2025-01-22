@@ -18,8 +18,6 @@
 ECConsoleFlightButton :: ECConsoleFlightButton(int xUL, int yUL, int xLR, int yLR, const std::string &strButIn, ECConsoleUIListBox* &lb1in, ECConsoleUIListBox* &lb2in, ECAirlineSimulator *&simIn, /*ECConsoleUIView *&viewIn,*/ ECConsoleUIListBox *&lbOut ) : 
     ECConsoleUIButton(xUL, yUL, xLR, yLR, strButIn), lb1(lb1in), lb2(lb2in), sim(simIn), fReady(false), /*view(viewIn),*/ lb(lbOut)
 {
-    // not sure if lb1 and lb2 will be properly assigned. . .
-    // same for sim
 }
 
 // Handle enter key
@@ -31,13 +29,10 @@ void ECConsoleFlightButton :: HdlKeyEnter()
     fReady = false;
     if (src != dest)
     {
-        // there's a problem with the simulation. . .
-        // gets stuck in a loop
         sim->SearchForFlights(src, dest, itineraries);
     }
 
     if (itineraries.size() >= 1) fReady = true;
-    // lb->RemoveChoices();
     populateFlights();
 }
 
@@ -47,8 +42,6 @@ int ECConsoleFlightButton :: GetItineraries(std::vector<ECFlightItinerary> &dest
     if (fReady)
     {
         copy(itineraries.begin(), itineraries.end(), back_inserter(dest) );
-        // may need to remove const func and set fReady to false
-        // fReady = false;
         return 1;
     }
     return 0;
