@@ -46,4 +46,4 @@ The second bug is that the list box that contains the itineraries will sometimes
 
 The final known issue is that after a period of time cycling through the UI items, the program may crash with a memory error.
 
-As of Jan 22, 2025, this program appears to run only on Macos M1 (hasn't throughly been tested elsewhere). There is an std::bad_alloc error when attempting to run it in an Ubuntu VM.
+As of Jan 22, 2025, this program appears to run only on Macos M1 (hasn't thoroughly been tested elsewhere). There is an std::bad_alloc error when attempting to run it in an Ubuntu VM.
